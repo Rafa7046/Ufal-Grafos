@@ -24,6 +24,7 @@ class Station():
         min_index = np.where(self.sum_vec == min_value)[0]
         if len(min_index) > 1:
             min_value = self.max_vec[min_index[0]]
+            station = min_index[0]
             for i in min_index:
                 if self.max_vec[i] < min_value:
                     min_value = self.max_vec[i]
