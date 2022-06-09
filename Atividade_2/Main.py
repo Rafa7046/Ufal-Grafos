@@ -1,4 +1,11 @@
-from Graph import Graph
+from Station import Station
+
+def main(file, is_oriented):
+    central_station = Station(file, is_oriented).station
+
+    print(f"O melhor local para ser a estação central é a {central_station}.")
+
+    return
 
 # As variáveis abaixo se referenciam ao grafo que sera analizado e se ele é um grafo orientado ou não,
 # necessário configura-las corretamente para o que código funcione como o esperado.
@@ -8,6 +15,4 @@ from Graph import Graph
 file = "grafo01.txt"
 is_oriented = False
 
-G = Graph(file, is_oriented).graph
-
-print(G)
+main(file, is_oriented)
