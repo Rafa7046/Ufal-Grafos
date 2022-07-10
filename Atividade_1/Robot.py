@@ -12,7 +12,6 @@ class Robot():
     def robot_path(self):
         while self.border is not empty:
             path = self.find_min()
-            # print(path.current_position)
             if path.get_current_position() == self.final_position:
                     return (path.trace, path.time)
             for son in path.sons:

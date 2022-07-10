@@ -1,6 +1,5 @@
 import shapely.geometry as sp
 import numpy as np
-import math
 
 class Graph:
 

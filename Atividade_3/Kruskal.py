@@ -1,6 +1,10 @@
+from Graph import Graph
+
 class Kruskal:
 
-    def __init__(self, graph):
+    def __init__(self, file):
+        graph = Graph(file)
+        self.edges = graph.edges
         self.graph = sorted(graph.graph, key = lambda graph:graph[2])
         self.kruskal_array = [0]*len(graph.edges)
         self.mst = []
